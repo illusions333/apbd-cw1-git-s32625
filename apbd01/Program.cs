@@ -37,7 +37,18 @@ static int CalculateMax(int[] values)
     }
     return max;
 }
-
+static int CalculateMin(int[] values)
+{
+    int min = values[0];
+    for (int i = 1; i < values.Length; i++)
+    {
+        if (values[i] < min)
+        {
+            min = values[i];
+        }
+    }
+    return min;
+}
 Console.WriteLine("Enter the amount of numbers you want to find the maximum from");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the numbers");

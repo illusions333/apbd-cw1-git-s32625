@@ -49,7 +49,7 @@ static int CalculateMin(int[] values)
     }
     return min;
 }
-Console.WriteLine("Enter the amount of numbers you want to find the maximum from");
+Console.WriteLine("Enter the amount of numbers you want to find the maximum and minimum from");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the numbers");
 List<int> numbers = new List<int>();
@@ -58,3 +58,4 @@ for (int i = 0; i < n; i++)
     numbers.Add(Convert.ToInt32(Console.ReadLine()));
 }
 Console.WriteLine("The maximum is equal to "  + CalculateMax(numbers.ToArray()));
+Console.WriteLine("The minimum is equal to "  + CalculateMin(numbers.ToArray()));

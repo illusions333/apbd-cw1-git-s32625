@@ -1,30 +1,31 @@
 ﻿for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("Hello, World! " + (i + 1) + " time");
-    Console.WriteLine("Welcome to merge conflict!");
+    Console.WriteLine("Welcome to merge conflict!"); // change from the main
 }
-// Console.WriteLine("Enter 2 numbers you want to operate with");
-// int a = Convert.ToInt32(Console.ReadLine());
-// int b = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Enter an operation");
-// char operation = Convert.ToChar(Console.Read());
-// Console.Write("The result is ");
-// if (operation == '+')
-// {
-//     Console.WriteLine(a + b);
-// }
-// else if (operation == '-')
-// {
-//     Console.WriteLine(a - b);
-// }
-// else if (operation == '*')
-// {
-//     Console.WriteLine(a * b);
-// }
-// else if (operation == '/')
-// {
-//     Console.WriteLine((float) a / (float) b);
-// }
+// change from the feature-conflict (uncommented lines)
+Console.WriteLine("Enter 2 numbers you want to operate with");
+int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter an operation");
+char operation = Convert.ToChar(Console.Read());
+Console.Write("The result is ");
+if (operation == '+')
+{
+    Console.WriteLine(a + b);
+}
+else if (operation == '-')
+{
+    Console.WriteLine(a - b);
+}
+else if (operation == '*')
+{
+    Console.WriteLine(a * b);
+}
+else if (operation == '/')
+{
+    Console.WriteLine((float) a / (float) b);
+}
 
 static int CalculateMax(int[] values)
 {

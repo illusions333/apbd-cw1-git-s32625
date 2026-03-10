@@ -1,6 +1,7 @@
 ﻿for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("Hello, World! " + (i + 1) + " time");
+    Console.WriteLine("Welcome to merge conflict!");
 }
 // Console.WriteLine("Enter 2 numbers you want to operate with");
 // int a = Convert.ToInt32(Console.ReadLine());
